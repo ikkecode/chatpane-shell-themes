@@ -1,0 +1,90 @@
+/* Chatpane theme
+   name: Slate Shell
+   author: ikkecode
+   preview: #dfe4ec #f3f5f9 #ffffff #4a6fa5 #f0f0f0
+*/
+
+/* Slate around the chat; chats keep their theme. */
+
+/* Light */
+:root {
+  --chatpane-wash: #dfe4ec;
+  --chatpane-hover: rgba(30, 50, 80, 0.05);
+  --chatpane-line: rgba(30, 50, 80, 0.1);
+  --chatpane-icon: #34435a;
+  --chatpane-selection: rgba(74, 111, 165, 0.22);
+
+  --shell-page: #f3f5f9;
+  --shell-field: #e6eaf1;
+  --shell-text: #1d2633;
+  --shell-text-2: #64718a;
+  --shell-brand: #4a6fa5;
+  --shell-brand-soft: #dde6f3;
+  --shell-brand-soft-text: #2c4c7c;
+}
+
+/* Dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --chatpane-wash: #161b23;
+    --chatpane-hover: rgba(200, 220, 255, 0.06);
+    --chatpane-line: rgba(200, 220, 255, 0.09);
+    --chatpane-icon: #cdd6e4;
+    --chatpane-selection: rgba(136, 169, 216, 0.3);
+
+    --shell-page: #1e2430;
+    --shell-field: #2b3343;
+    --shell-text: #e3e9f2;
+    --shell-text-2: #96a3b8;
+    --shell-brand: #88a9d8;
+    --shell-brand-soft: #2c3749;
+    --shell-brand-soft-text: #bcd0ee;
+  }
+}
+
+/* Don't edit below. */
+@media (prefers-color-scheme: light) {
+  :root,
+  .__fb-light-mode {
+    --surface-background: var(--shell-page) !important;
+    --card-background: var(--shell-page) !important;
+    --messenger-card-background: var(--shell-page) !important;
+    --popover-background: var(--shell-page) !important;
+    --comment-background: var(--shell-field) !important;
+    --input-background: var(--shell-field) !important;
+    --secondary-button-background: var(--shell-field) !important;
+    --primary-text: var(--shell-text) !important;
+    --secondary-text: var(--shell-text-2) !important;
+    --placeholder-text: var(--shell-text-2) !important;
+    --secondary-icon: var(--shell-text-2) !important;
+    --placeholder-icon: var(--shell-text-2) !important;
+    --accent: var(--shell-brand) !important;
+    --primary-button-background: var(--shell-brand) !important;
+    --blue-link: var(--shell-brand) !important;
+    --primary-deemphasized-button-background: var(--shell-brand-soft) !important;
+    --primary-deemphasized-button-text: var(--shell-brand-soft-text) !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  .__fb-dark-mode {
+    --surface-background: var(--shell-page) !important;
+    --card-background: var(--shell-page) !important;
+    --messenger-card-background: var(--shell-page) !important;
+    --popover-background: var(--shell-page) !important;
+    --comment-background: var(--shell-field) !important;
+    --input-background: var(--shell-field) !important;
+    --secondary-button-background: var(--shell-field) !important;
+    --primary-text: var(--shell-text) !important;
+    --secondary-text: var(--shell-text-2) !important;
+    --placeholder-text: var(--shell-text-2) !important;
+    --secondary-icon: var(--shell-text-2) !important;
+    --placeholder-icon: var(--shell-text-2) !important;
+    --accent: var(--shell-brand) !important;
+    --primary-button-background: var(--shell-brand) !important;
+    --blue-link: var(--shell-brand) !important;
+    --primary-deemphasized-button-background: var(--shell-brand-soft) !important;
+    --primary-deemphasized-button-text: var(--shell-brand-soft-text) !important;
+  }
+}

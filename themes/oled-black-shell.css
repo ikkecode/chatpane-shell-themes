@@ -1,0 +1,40 @@
+/* Chatpane theme
+   name: OLED Black Shell
+   author: ikkecode
+   mode: dark
+   preview: #000000 #000000 #242526 #0866ff #303030
+*/
+
+/* OLED Black around the chat; chats keep their theme. */
+
+/* Dark */
+:root {
+  --chatpane-wash: #000000;
+  --chatpane-hover: rgba(255, 255, 255, 0.06);
+  --chatpane-line: rgba(255, 255, 255, 0.09);
+  --chatpane-icon: #e5e5ea;
+
+  --shell-page: #000000;
+  --shell-field: #151517;
+  --shell-text: #f5f5f7;
+  --shell-text-2: #8e8e93;
+}
+
+/* Don't edit below. */
+@media (prefers-color-scheme: dark) {
+  :root,
+  .__fb-dark-mode {
+    --surface-background: var(--shell-page) !important;
+    --card-background: var(--shell-page) !important;
+    --messenger-card-background: var(--shell-page) !important;
+    --popover-background: var(--shell-page) !important;
+    --comment-background: var(--shell-field) !important;
+    --input-background: var(--shell-field) !important;
+    --secondary-button-background: var(--shell-field) !important;
+    --primary-text: var(--shell-text) !important;
+    --secondary-text: var(--shell-text-2) !important;
+    --placeholder-text: var(--shell-text-2) !important;
+    --secondary-icon: var(--shell-text-2) !important;
+    --placeholder-icon: var(--shell-text-2) !important;
+  }
+}

@@ -1,0 +1,56 @@
+/* Chatpane theme
+   name: Terminal Shell
+   author: ikkecode
+   mode: dark
+   preview: #000000 #050805 #242526 #3dff6e #303030
+*/
+
+/* Terminal around the chat; chats keep their theme. */
+
+/* Dark */
+:root {
+  --chatpane-wash: #000000;
+  --chatpane-hover: rgba(80, 255, 120, 0.06);
+  --chatpane-line: rgba(80, 255, 120, 0.16);
+  --chatpane-icon: #b6f5c0;
+  --chatpane-selection: rgba(61, 255, 110, 0.25);
+
+  --shell-page: #050805;
+  --shell-field: #0c140c;
+  --shell-text: #b6f5c0;
+  --shell-text-2: #4f9a5c;
+  --shell-brand: #3dff6e;
+  --shell-brand-soft: #0f2a14;
+  --shell-brand-soft-text: #5cff7a;
+}
+
+/* Monospace everywhere, same as Terminal. */
+html[data-chatpane-chats] :is(body, body *):not([data-chatpane-system-emoji-glyph]) {
+  font-family: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Mono", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace !important;
+  font-size-adjust: 0.52 !important;
+}
+
+/* Don't edit below. */
+@media (prefers-color-scheme: dark) {
+  :root,
+  .__fb-dark-mode {
+    --surface-background: var(--shell-page) !important;
+    --card-background: var(--shell-page) !important;
+    --messenger-card-background: var(--shell-page) !important;
+    --popover-background: var(--shell-page) !important;
+    --comment-background: var(--shell-field) !important;
+    --input-background: var(--shell-field) !important;
+    --secondary-button-background: var(--shell-field) !important;
+    --primary-text: var(--shell-text) !important;
+    --secondary-text: var(--shell-text-2) !important;
+    --placeholder-text: var(--shell-text-2) !important;
+    --secondary-icon: var(--shell-text-2) !important;
+    --placeholder-icon: var(--shell-text-2) !important;
+    --accent: var(--shell-brand) !important;
+    --primary-button-background: var(--shell-brand) !important;
+    --blue-link: var(--shell-brand) !important;
+    --primary-deemphasized-button-background: var(--shell-brand-soft) !important;
+    --primary-deemphasized-button-text: var(--shell-brand-soft-text) !important;
+  }
+}
